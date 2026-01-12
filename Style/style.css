@@ -101,7 +101,7 @@ header {
 
 .text {
     position: relative;
-    top: 10rem;
+    top: 4rem;
     left: 11rem;
     letter-spacing: 1px;
     animation: fadeInUp 1s ease-in-out;
@@ -247,3 +247,4 @@ header {
         opacity: 1;
     }
 }
+
