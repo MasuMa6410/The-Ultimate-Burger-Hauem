@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Burger Website</title>
+    <!-- Bootstrap Version 5.3.2 (CSS) -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <!-- CSS Link -->
     <link rel="stylesheet" href="./Style/style.css" />
     <!-- Font-awesome Cdn -->
@@ -12,38 +14,133 @@
   <body>
     <header>
       <div id="stars"></div>
-      <div class="navbar">
-        <img src="./Imgaes/logo.png" alt="The logo">
-        <div class="center-nav">
-          <a href="">Home</a>
-          <a href="">Menu</a>
-          <a href="">About</a>
-          <a href="">Shop</a>
-        </div>
-        <div class="social">
+      <nav class="navbar navbar-expand-sm">
+    <div class="container">
+
+      <!-- LEFT: Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./Images/logo.png" alt="Logo" style="width:50px;"> 
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- COLLAPSE AREA -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <!-- CENTER: Navigation -->
+        <ul class="navbar-nav mx-auto center-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+        </ul>
+        <!-- RIGHT: Social Icons -->
+        <div class="social ms-auto d-flex align-items-center gap-3 flex-nowrap">
           <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
           <a href=""><i class="fa-solid fa-cart-plus"></i></a>
           <a href=""><i class="fa-solid fa-house"></i></a>
         </div>
       </div>
-      <div class="text">
-        <h1>THE ULTIMATE <br> BURGER HAUEM</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam neque, facilis mollitia exercitationem reprehenderit. Accusamus quibusdam hic quisquam cumque voluptates, aperiam placeat voluptas recusandae consequatur laboriosam, dolor enim sunt!</p>
-        <a href="" class="btn">Order Now</a>
-        <a href="" class="btn">View more</a>
-      </div>
-      <div class="burger">
-        <img src="./Images/burger.png" alt="Burger">
-        <img src="./Images/pngwing.com (12).png" alt="The Burger">
-        <img src="./Images/buger2.png" alt="Burger">
-        <img src="./Images/Flying Burger PNG Image - 2084x2084.png" alt="Flying Burger">
-        <img src="./Images/pngwing.com (16).png" alt="Burger">
-      </div>
-      <div class="burger-toggle">
-        <img src="./Images/Flying Burger PNG Image - 2084x2084.png" alt="Burger" class="active">
-      </div>
+    </div>
+      </nav>
     </header>
+    <main>
+      <div class="container p-5">
+        <div class="row row-cols-md-12 row-cols-sm-12 ">
+          <div class="col-lg-5 col-md-12 col-sm-12 d-flex align-items-center mb-md-4 mb-sm-4 mb-lg-0">
+            <div class="text ">
+              <h1>THE ULTIMATE <br> BURGER HAUEM</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam neque, facilis mollitia exercitationem reprehenderit. Accusamus quibusdam hic quisquam cumque voluptates, aperiam placeat voluptas recusandae consequatur laboriosam, dolor enim sunt!</p>
+              <a href="" class="btn">Order Now</a>
+              <a href="" class="btn">View more</a>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 d-none d-lg-block">
+            <!-- Spacer div -->
+          </div>
+          
+          <div class="col-lg-5 col-md-12 col-sm-12 d-flex align-items-center mt-sm-5 mt-md-5 mt-lg-0">
+            <div class="burger-toggle ">
+              <img src="./Images/Flying Burger PNG Image - 2084x2084.png" alt="Burger" class="active">
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12">
+           <div class="burger mt-lg-5 mt-md-3 mt-sm-3">
+            <img src="./Images/burger.png" alt="Burger">
+            <img src="./Images/pngwing.com (12).png" alt="The Burger">
+            <img src="./Images/buger2.png" alt="Burger">
+            <img src="./Images/Flying Burger PNG Image - 2084x2084.png" alt="Flying Burger">
+            <img src="./Images/buger2.png" alt="Burger">
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+      <footer>
+        <div class="container pt-5 pl-2 pr-2 pb-5">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h2>Get in Touch</h2>
+              <p><i class="fa-solid fa-location-dot"></i> 123 Burger Street, Foodville</p>
+
+              <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+
+              <p><i class="fa-solid fa-envelope"></i> info@burgerhauem.com</p>
+
+              <p><i class="fa-brands fa-x-twitter"></i> <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-linkedin-in"></i> <i class="fa-brands fa-instagram"></i></p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h2>Quick Links</h2>
+              <ul>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#">Home</a></li>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#">Menu</a></li>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#">About</a></li>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#">Shop</a></li>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h2>Newsletter</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusamus vitae distinctio quis natus ullam.</p>
+              <form>
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Your Email Address">
+                  <button class="input-group-text">Sign Up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container p-2">
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <p>&copy; 2024 Burger Hauem. All Rights Reserved.</p>
+            </div>
+            <div class="col-6 col-sm-12">
+              <ul>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Help</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
   </body>
+  <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     const burgerImages = document.querySelectorAll('.burger img');
     const toggleImages = document.querySelectorAll('.burger-toggle img');

@@ -1,26 +1,42 @@
 /* Reset Styles */
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
     color: white;
     animation: fadeIn 1s ease-in-out;
-    background-color: black;
+    background-color: black !important;
     background-attachment: fixed;
 }
 
 header {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    /* Removed to prevent large gap */
     background-color: transparent;
     animation: fadeIn 1s ease-in-out;
+    position: relative;
+    /* Ensure stars are positioned relative to header */
 }
 
 /* Add animated stars */
+
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    /* Prevent interaction */
+}
 
 .star {
     position: absolute;
@@ -46,18 +62,28 @@ header {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     animation: slideInFromTop 1s ease-in-out;
 }
 
 .navbar img {
-    width: 50px;
     animation: rotateIn 1s ease-in-out;
 }
 
-.navbar .center-nav a, .social a {
+.navbar .container button i {
+    color: white;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+
+.navbar .container button i:hover {
+    color: rgb(255, 140, 0) !important;
+    text-shadow: 0px 0px 30px rgb(255, 140, 0) !important;
+}
+
+
+/* NAV LINKS + SOCIAL ICONS */
+.navbar .center-nav .nav-link,
+.navbar .social a {
     color: white;
     margin-left: 15px;
     font-size: 1.3rem;
@@ -65,28 +91,32 @@ header {
     animation: fadeInUp 1s ease-in-out;
 }
 
-.navbar .center-nav a:first-child {
+/* First nav item highlighted */
+.navbar .center-nav .nav-item:first-child .nav-link {
     color: rgb(255, 140, 0);
 }
 
-.navbar .center-nav a:hover, .social a:hover {
+/* Hover effect */
+.navbar .center-nav .nav-link:hover,
+.navbar .social a:hover {
     color: rgb(255, 140, 0);
     text-shadow: 0px 0px 30px rgb(255, 140, 0);
 }
 
-/* New styles for underline effect */
-
-.navbar .center-nav a {
+/* Underline animation */
+.navbar .center-nav .nav-link {
     position: relative;
     text-decoration: none;
+    display: inline-block;
+    width: fit-content;
 }
 
-.navbar .center-nav a::before {
+.navbar .center-nav .nav-link::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     background-color: rgb(255, 140, 0);
     visibility: hidden;
@@ -94,32 +124,37 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-.navbar .center-nav a:hover::before {
+.navbar .center-nav .nav-link:hover::before {
     visibility: visible;
     transform: scaleX(1);
 }
 
+
 .text {
-    position: relative;
-    top: 4rem;
-    left: 11rem;
+    /* position: relative; */
+    top: 2rem;
+    /* left: 11rem; */
     letter-spacing: 1px;
     animation: fadeInUp 1s ease-in-out;
 }
 
 .text h1 {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     animation: fadeInUp 1s ease-in-out;
+}
+
+.text p {
+    animation: fadeInUp 1s ease-in-out 1s backwards;
 }
 
 .btn {
     color: white;
     border: 2px solid;
     position: relative;
-    top: 3rem;
+    top: 2rem;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 14px;
@@ -133,28 +168,26 @@ header {
 .text .btn:hover {
     background-color: rgb(255, 140, 0);
     box-shadow: 0 0 10px 2px rgb(255, 140, 0);
-}
-
-.text p {
-    width: 46%;
-    animation: fadeInUp 1s ease-in-out 1s backwards;
+    border-color: rgb(255, 140, 0);
+    color: white;
 }
 
 .burger {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    /* position: fixed; */
+    /* bottom: 5px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%);
     display: flex;
     width: 90%;
-    padding: 20px;
+    padding: 20px; */
     animation: slideInFromBottom 1s ease-in-out 1.5s backwards;
 }
 
 .burger img {
     width: 100px;
     height: 100px;
-    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
     object-fit: cover;
     border: 2px solid white;
     transition: transform 0.3s ease;
@@ -166,17 +199,22 @@ header {
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 }
 
+.burger-toggle {
+    text-align: center;
+}
+
 .burger-toggle img {
-    position: absolute;
-    width: 38%;
-    height: 74%;
-    right: 47px;
-    top: 7rem;
+    /* width: 600px; */
+    height: 420px;
+    object-fit: contain;
+    /* right: 47px; */
+    /* top: 7rem; */
     filter: drop-shadow(63px 90px 392px);
     animation: fadeInUp 1s ease-in-out 2.5s backwards;
 }
 
-.burger, .burger-toggle {
+/* .burger,
+.burger-toggle {
     display: flex;
 }
 
@@ -186,7 +224,7 @@ header {
 
 .burger-toggle img.active {
     display: block;
-}
+} */
 
 /* Animations */
 
@@ -248,3 +286,8 @@ header {
     }
 }
 
+/* Footer Styles */
+footer {
+    background: rgba(48, 47, 47, 0.6);
+    backdrop-filter: blur(3px);
+}
