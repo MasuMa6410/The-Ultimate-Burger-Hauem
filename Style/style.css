@@ -6,14 +6,21 @@
 }
 
 body {
-    /* overflow: hidden; */
     overflow-x: hidden;
-    /* Prevent horizontal scroll */
     color: white;
     animation: fadeIn 1s ease-in-out;
     background-color: black !important;
     background-attachment: fixed;
 }
+
+@media (max-width: 576px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}
+
 
 header {
     width: 100%;
@@ -111,6 +118,15 @@ header {
 }
 
 .page-about .navbar .center-nav .nav-item:nth-child(3) .nav-link {
+    color: rgb(255, 140, 0);
+}
+
+/* Override for Shop page: highlight Shop instead of Home */
+.page-shop .navbar .center-nav .nav-item:first-child .nav-link {
+    color: white;
+}
+
+.page-shop .navbar .center-nav .nav-item:nth-child(4) .nav-link {
     color: rgb(255, 140, 0);
 }
 
@@ -227,11 +243,8 @@ header {
 }
 
 .burger-toggle img {
-    /* width: 600px; */
     height: 420px;
     object-fit: contain;
-    /* right: 47px; */
-    /* top: 7rem; */
     filter: drop-shadow(63px 90px 392px);
     animation: fadeInUp 1s ease-in-out 2.5s backwards;
 }
@@ -406,4 +419,96 @@ footer div p .burger-name {
     color: rgb(255, 140, 0);
     font-weight: bold;
     text-decoration: none;
+}
+
+/* Shop Page Styles */
+.shop-header {
+    text-align: center;
+}
+
+.category-filters .filter-btn {
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.category-filters .filter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+}
+
+.category-filters .filter-btn.active {
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+}
+
+.burger-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.burger-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
+}
+
+.burger-image img {
+    transition: transform 0.3s ease;
+}
+
+.burger-card:hover .burger-image img {
+    transform: scale(1.05);
+}
+
+.add-to-cart-btn {
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.add-to-cart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+}
+
+.cart-summary .card {
+    min-width: 200px;
+    animation: slideInFromRight 0.5s ease-in-out;
+}
+
+.p-x {
+    padding-bottom: 20px;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments for shop */
+@media (max-width: 768px) {
+    .category-filters .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-filters .btn {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .burger-info {
+        padding: 20px !important;
+    }
+
+    .cart-summary {
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        left: 20px !important;
+        margin: 0 !important;
+    }
 }
