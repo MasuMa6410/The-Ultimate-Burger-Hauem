@@ -24,12 +24,9 @@ body {
 
 header {
     width: 100%;
-    /* height: 100vh; */
-    /* Removed to prevent large gap */
     background-color: transparent;
     animation: fadeIn 1s ease-in-out;
     position: relative;
-    /* Ensure stars are positioned relative to header */
 }
 
 /* Add animated stars */
@@ -42,7 +39,6 @@ header {
     height: 100vh;
     z-index: -1;
     pointer-events: none;
-    /* Prevent interaction */
 }
 
 .star {
@@ -170,9 +166,7 @@ header {
 
 
 .text {
-    /* position: relative; */
     top: 2rem;
-    /* left: 11rem; */
     letter-spacing: 1px;
     animation: fadeInUp 1s ease-in-out;
 }
@@ -212,13 +206,6 @@ header {
 }
 
 .burger {
-    /* position: fixed; */
-    /* bottom: 5px; */
-    /* left: 50%; */
-    /* transform: translateX(-50%);
-    display: flex;
-    width: 90%;
-    padding: 20px; */
     animation: slideInFromBottom 1s ease-in-out 1.5s backwards;
 }
 
@@ -260,19 +247,6 @@ div a.btn-rgb:hover {
     border-color: white;
     color: white;
 }
-
-/* .burger,
-.burger-toggle {
-    display: flex;
-}
-
-.burger-toggle img {
-    display: none;
-}
-
-.burger-toggle img.active {
-    display: block;
-} */
 
 /* Animations */
 
