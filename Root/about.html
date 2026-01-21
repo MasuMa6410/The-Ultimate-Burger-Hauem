@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Website</title>
+    <!-- Bootstrap Version 5.3.2 (CSS) -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../Style/style.css" />
+    <!-- Font-awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="page-about">
+  <header>
+      <div id="stars"></div>
+      <nav class="navbar navbar-expand-sm">
+    <div class="container">
+
+      <!-- LEFT: Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="../Images/logo.png" alt="Logo" style="width:50px;"> 
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- COLLAPSE AREA -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <!-- CENTER: Navigation -->
+        <ul class="navbar-nav mx-auto center-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Root/menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../Root/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Root/shop.html">Shop</a>
+          </li>
+        </ul>
+        <!-- RIGHT: Social Icons -->
+        <div class="social ms-auto d-flex align-items-center gap-3 flex-nowrap">
+          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+          <a href=""><i class="fa-solid fa-house"></i></a>
+        </div>
+      </div>
+    </div>
+      </nav>
+  </header>
+  <main>
+    <!-- About Hero Section -->
+    <section class="about-hero py-5 mb-5" style="background: rgba(48, 47, 47, 0.6);">
+      <div class="container" style="width: 80%; max-width: 1200px;" >
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+            <h1 class="display-4 fw-bold mb-4" style="color: rgb(255, 140, 0);">About Burger Hauem</h1>
+            <p class="lead mb-4">
+              Welcome to Burger Hauem, where passion for perfection meets the art of burger crafting. 
+              Since our founding, we've been dedicated to serving the most delicious, high-quality burgers 
+              made with fresh ingredients and a whole lot of love.
+            </p>
+            <p class="mb-4">
+              Our journey began with a simple idea: create burgers that not only satisfy your hunger 
+              but also create unforgettable memories. Every patty is hand-formed, every bun is freshly baked, 
+              and every topping is carefully selected to ensure the perfect bite.
+            </p>
+            <a href="../Root/menu.html" class="btn btn-lg" style="background-color: rgb(255, 140, 0); color: white; border: none;">Explore Our Menu</a>
+          </div>
+          <div class="col-lg-6 col-md-12 text-center">
+            <img src="../Images/Flying Burger PNG Image - 2084x2084.png" alt="Flying Burger" class="img-fluid rounded shadow" style="max-height: 400px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story py-5" style="background: rgba(48, 47, 47, 0.6);">
+      <div class="container" style="width: 80%; max-width: 1200px;">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 order-lg-2">
+            <h2 class="h1 fw-bold mb-4" style="color: rgb(255, 140, 0);">Our Story</h2>
+            <p class="mb-3">
+              Founded in 2020, Burger Hauem started as a small food truck in the heart of the city. 
+              What began as a dream to serve exceptional burgers quickly became a beloved local institution.
+            </p>
+            <p class="mb-3">
+              Our commitment to quality ingredients, innovative recipes, and exceptional customer service 
+              has helped us grow from a single food truck to multiple locations across the region.
+            </p>
+            <p class="mb-4">
+              Today, we're proud to continue our tradition of crafting burgers that bring people together 
+              and create lasting memories with every delicious bite.
+            </p>
+            <div class="row text-center">
+              <div class="col-4">
+                <h3 class="fw-bold" style="color: rgb(255, 140, 0);">50K+</h3>
+                <p>Happy Customers</p>
+              </div>
+              <div class="col-4">
+                <h3 class="fw-bold" style="color: rgb(255, 140, 0);">15+</h3>
+                <p>Burger Varieties</p>
+              </div>
+              <div class="col-4">
+                <h3 class="fw-bold" style="color: rgb(255, 140, 0);">5</h3>
+                <p>Locations</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 text-center order-lg-1">
+            <img src="../Images/classic burger.PNG" alt="Classic Burger" class="img-fluid rounded shadow" style="max-height: 350px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="our-values py-5">
+      <div class="container" style="width: 80%; max-width: 1200px;">
+        <div class="text-center mb-5">
+          <h2 class="h1 fw-bold" style="color: rgb(255, 140, 0);">Our Values</h2>
+          <p class="lead">What drives us to make the best burgers in town</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card h-100 border-0" style="background: rgba(48, 47, 47, 0.6); backdrop-filter: blur(3px);">
+              <div class="card-body text-center p-4">
+                <i class="fas fa-leaf fa-3x mb-3" style="color: rgb(255, 140, 0);"></i>
+                <h5 class="card-title fw-bold mb-3 text-white">Fresh Ingredients</h5>
+                <p class="card-text text-white">We source only the freshest, highest-quality ingredients for every burger we make.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card h-100 border-0" style="background: rgba(48, 47, 47, 0.6); backdrop-filter: blur(3px);">
+              <div class="card-body text-center p-4">
+                <i class="fas fa-heart fa-3x mb-3" style="color: rgb(255, 140, 0);"></i>
+                <h5 class="card-title fw-bold mb-3 text-white">Made with Love</h5>
+                <p class="card-text text-white">Every burger is crafted with passion and attention to detail by our skilled team.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card h-100 border-0" style="background: rgba(48, 47, 47, 0.6); backdrop-filter: blur(3px);">
+              <div class="card-body text-center p-4">
+                <i class="fas fa-users fa-3x mb-3" style="color: rgb(255, 140, 0);"></i>
+                <h5 class="card-title fw-bold mb-3 text-white">Community Focused</h5>
+                <p class="card-text text-white">We're committed to our community and creating positive experiences for everyone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery py-5" style="background: rgba(48, 47, 47, 0.6);">
+      <div class="container" style="width: 80%; max-width: 1200px;">
+        <div class="text-center mb-5">
+          <h2 class="h1 fw-bold" style="color: rgb(255, 140, 0);">Burger Gallery</h2>
+          <p class="lead">A taste of what we offer</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../Images/burger.png" alt="Burger 1" class="img-fluid rounded shadow img-thumbnai border border-white" style="width: 100%; height: 200px; object-fit: cover;">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../Images/cheese burger.PNG" alt="Cheese Burger" class="img-fluid rounded shadow img-thumbnai border border-white" style="width: 100%; height: 200px; object-fit: cover;">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../Images/pngwing.com (12).png" alt="Burger 3" class="img-fluid rounded shadow img-thumbnai border border-white" style="width: 100%; height: 200px; object-fit: cover;">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../Images/pngwing.com (13).png" alt="Burger 4" class="img-fluid rounded shadow img-thumbnai border border-white" style="width: 100%; height: 200px; object-fit: cover;">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../Images/pngwing.com (14).png" alt="Burger 5" class="img-fluid rounded shadow img-thumbnai border border-white" style="width: 100%; height: 200px; object-fit: cover;">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../Images/pngwing.com (15).png" alt="Burger 6" class="img-fluid rounded shadow img-thumbnai border border-white" style="width: 100%; height: 200px; object-fit: cover;">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../Images/pngwing.com (16).png" alt="Burger 7" class="img-fluid rounded shadow img-thumbnai border border-white" style="width: 100%; height: 200px; object-fit: cover;">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img src="../Images/buger2.png" alt="Burger 8" class="img-fluid rounded shadow img-thumbnai border border-white" style="width: 100%; height: 200px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mt-5">
+        <div class="container pt-5 pl-3 pr-3 pb-3">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h2>Get in Touch</h2>
+              <p><i class="fa-solid fa-location-dot"></i> 123 Burger Street</p>
+
+              <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+
+              <p><i class="fa-solid fa-envelope"></i> info@burgerhauem.com</p>
+
+              <p class="mt-5"><i class="fa-brands fa-x-twitter round border border-white"></i> <i class="fa-brands fa-facebook-f round border border-white"></i> <i class="fa-brands fa-linkedin-in round border border-white"></i> <i class="fa-brands fa-instagram round border border-white"></i></p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h2>Quick Links</h2>
+              <ul>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#" class="style-none">Home</a></li>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#" class="style-none">Menu</a></li>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#" class="style-none">About</a></li>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#" class="style-none">Shop</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h2>Newsletter</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusamus vitae distinctio quis natus ullam.</p>
+              <form>
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Your Email Address">
+                  <button class="input-group-text px-4">Sign Up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr class="m-0">
+        <div class="container pt-3 pb-3">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <p class="mb-0">&copy; 2026 <a href="#" class="burger-name">Burger Hauem</a>. All Rights Reserved.</p>
+            </div>
+           <div class="col-12 col-md-6 d-flex justify-content-md-end">
+              <ul class="d-flex gap-3 mb-0">
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Help</a></li>
+              </ul>
+           </div>
+          </div>
+        </div>
+  </footer>
+</body>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Safe burger image toggling (run only if elements exist)
+    const burgerImages = document.querySelectorAll('.burger img');
+    const toggleImages = document.querySelectorAll('.burger-toggle img');
+    let currentIndex = 0;
+
+    if (toggleImages.length > 0 && burgerImages.length > 0) {
+        toggleImages[currentIndex].classList.add('active');
+
+        burgerImages.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                toggleImages.forEach(toggleImg => toggleImg.classList.remove('active'));
+                toggleImages[currentIndex].classList.add('active');
+                toggleImages[currentIndex].src = burgerImages[index].src;
+                currentIndex = (currentIndex + 1) % toggleImages.length;
+            });
+        });
+    }
+
+    // Generate Random Stars
+    function createStars() {
+        const starsContainer = document.getElementById('stars');
+        if (!starsContainer) return;
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = `${Math.random() * windowWidth}px`;
+            star.style.top = `${Math.random() * windowHeight}px`;
+            starsContainer.appendChild(star);
+        }
+    }
+
+    // Call the createStars function when the page loads
+    window.addEventListener('load', createStars);
+</script>
+</html>

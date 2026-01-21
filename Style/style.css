@@ -96,6 +96,29 @@ header {
     color: rgb(255, 140, 0);
 }
 
+/* Override for menu page: highlight Menu instead of Home */
+.page-menu .navbar .center-nav .nav-item:first-child .nav-link {
+    color: white;
+}
+
+.page-menu .navbar .center-nav .nav-item:nth-child(2) .nav-link {
+    color: rgb(255, 140, 0);
+}
+
+/* Override for About page: highlight About instead of Home */
+.page-about .navbar .center-nav .nav-item:first-child .nav-link {
+    color: white;
+}
+
+.page-about .navbar .center-nav .nav-item:nth-child(3) .nav-link {
+    color: rgb(255, 140, 0);
+}
+
+/* Active nav link for current page */
+.navbar .center-nav .nav-link.active {
+    color: rgb(255, 140, 0);
+}
+
 /* Hover effect */
 .navbar .center-nav .nav-link:hover,
 .navbar .social a:hover {
@@ -213,6 +236,18 @@ header {
     animation: fadeInUp 1s ease-in-out 2.5s backwards;
 }
 
+/* Menu */
+
+.btn-rgb {
+    background-color: rgb(255, 140, 0);
+}
+
+div a.btn-rgb:hover {
+    background-color: rgb(247, 150, 32);
+    border-color: white;
+    color: white;
+}
+
 /* .burger,
 .burger-toggle {
     display: flex;
@@ -290,4 +325,85 @@ header {
 footer {
     background: rgba(48, 47, 47, 0.6);
     backdrop-filter: blur(3px);
+}
+
+footer div h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+footer div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+    margin-bottom: 10px;
+}
+
+footer div ul li a:hover {
+    color: rgb(255, 140, 0) !important;
+    text-shadow: 0px 0px 30px rgb(255, 140, 0) !important;
+}
+
+/* Make footer links match header nav hover + underline animation */
+footer div ul li a {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+footer div ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(255, 140, 0);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+footer div ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+footer div p .round {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+footer div p .round:hover {
+    color: rgb(255, 140, 0);
+    box-shadow: 0 0 10px 2px rgb(255, 140, 0);
+    border-color: rgb(255, 140, 0) !important;
+    cursor: pointer;
+}
+
+footer div form input {
+    width: 60%;
+}
+
+footer div form button {
+    background-color: rgb(255, 140, 0) !important;
+    color: white !important;
+}
+
+footer div p .burger-name {
+    color: rgb(255, 140, 0);
+    font-weight: bold;
+    text-decoration: none;
 }

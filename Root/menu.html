@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Website</title>
+    <!-- Bootstrap Version 5.3.2 (CSS) -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../Style/style.css" />
+    <!-- Font-awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="page-menu">
+  <header>
+      <div id="stars"></div>
+      <nav class="navbar navbar-expand-sm">
+    <div class="container">
+
+      <!-- LEFT: Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="../Images/logo.png" alt="Logo" style="width:50px;"> 
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- COLLAPSE AREA -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <!-- CENTER: Navigation -->
+        <ul class="navbar-nav mx-auto center-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../Root/menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Root/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Root/shop.html">Shop</a>
+          </li>
+        </ul>
+        <!-- RIGHT: Social Icons -->
+        <div class="social ms-auto d-flex align-items-center gap-3 flex-nowrap">
+          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+          <a href=""><i class="fa-solid fa-house"></i></a>
+        </div>
+      </div>
+    </div>
+      </nav>
+  </header>
+  <main>
+    <div class="container py-5" style="width: 80%; margin: 0 auto;">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h1>Our Menu</h1>
+          <p>Delicious burgers made with the finest ingredients</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col mt-5">
+          <div class="card bg-dark text-white border-secondary">
+            <img src="../Images/classic burger.PNG"class="card-img-top" height="250px" alt="Classic Burger">
+            <div class="card-body">
+              <h5 class="card-title">Classic Burger</h5>
+              <p class="card-text">Juicy beef patty with lettuce, tomato, onion, and our special sauce.</p>
+              <p class="card-text"><strong>$12.99</strong></p>
+              <a href="#" class="btn btn-rgb">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card bg-dark text-white border-secondary">
+            <img src="../Images/cheese burger.PNG" class="card-img-top" height="250px" alt="Cheese Burger">
+            <div class="card-body">
+              <h5 class="card-title">Cheese Burger</h5>
+              <p class="card-text">Classic burger topped with melted cheddar cheese.</p>
+              <p class="card-text"><strong>$14.99</strong></p>
+              <a href="#" class="btn btn-rgb">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card bg-dark text-white border-secondary">
+            <img src="../Images/image.jpg" class="card-img-top" height="250px" alt="Bacon Burger">
+            <div class="card-body">
+              <h5 class="card-title">Bacon Burger</h5>
+              <p class="card-text">Loaded with crispy bacon strips and BBQ sauce.</p>
+              <p class="card-text"><strong>$16.99</strong></p>
+              <a href="#" class="btn btn-rgb">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card bg-dark text-white border-secondary">
+            <img src="../Images/classic burger.PNG" class="card-img-top" height="250px" alt="Veggie Burger">
+            <div class="card-body">
+              <h5 class="card-title">Veggie Burger</h5>
+              <p class="card-text">Plant-based patty with fresh veggies and avocado.</p>
+              <p class="card-text"><strong>$13.99</strong></p>
+              <a href="#" class="btn btn-rgb">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card bg-dark text-white border-secondary">
+            <img src="../Images/cheese burger.PNG" class="card-img-top" height="250px" alt="Spicy Burger">
+            <div class="card-body">
+              <h5 class="card-title">Spicy Burger</h5>
+              <p class="card-text">Fiery jalapeños and spicy mayo for heat lovers.</p>
+              <p class="card-text"><strong>$15.99</strong></p>
+              <a href="#" class="btn btn-rgb">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card bg-dark text-white border-secondary">
+            <img src="../Images/image.jpg" class="card-img-top" height="250px" alt="Double Burger">
+            <div class="card-body">
+              <h5 class="card-title">Double Burger</h5>
+              <p class="card-text">Two juicy patties stacked high with all the fixings.</p>
+              <p class="card-text"><strong>$18.99</strong></p>
+              <a href="#" class="btn btn-rgb">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-5">
+        <div class="container pt-5 pl-3 pr-3 pb-3">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h2>Get in Touch</h2>
+              <p><i class="fa-solid fa-location-dot"></i> 123 Burger Street</p>
+
+              <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+
+              <p><i class="fa-solid fa-envelope"></i> info@burgerhauem.com</p>
+
+              <p class="mt-5"><i class="fa-brands fa-x-twitter round border border-white"></i> <i class="fa-brands fa-facebook-f round border border-white"></i> <i class="fa-brands fa-linkedin-in round border border-white"></i> <i class="fa-brands fa-instagram round border border-white"></i></p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h2>Quick Links</h2>
+              <ul>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#" class="style-none">Home</a></li>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#" class="style-none">Menu</a></li>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#" class="style-none">About</a></li>
+                <li> <i class="fa-solid fa-angle-right"></i> <a href="#" class="style-none">Shop</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h2>Newsletter</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusamus vitae distinctio quis natus ullam.</p>
+              <form>
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Your Email Address">
+                  <button class="input-group-text px-4">Sign Up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr class="m-0">
+        <div class="container pt-3 pb-3">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <p class="mb-0">&copy; 2026 <a href="#" class="burger-name">Burger Hauem</a>. All Rights Reserved.</p>
+            </div>
+           <div class="col-12 col-md-6 d-flex justify-content-md-end">
+              <ul class="d-flex gap-3 mb-0">
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Help</a></li>
+              </ul>
+           </div>
+          </div>
+        </div>
+  </footer>
+</body>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Safe burger image toggling (run only if elements exist)
+    const burgerImages = document.querySelectorAll('.burger img');
+    const toggleImages = document.querySelectorAll('.burger-toggle img');
+    let currentIndex = 0;
+
+    if (toggleImages.length > 0 && burgerImages.length > 0) {
+        toggleImages[currentIndex].classList.add('active');
+
+        burgerImages.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                toggleImages.forEach(toggleImg => toggleImg.classList.remove('active'));
+                toggleImages[currentIndex].classList.add('active');
+                toggleImages[currentIndex].src = burgerImages[index].src;
+                currentIndex = (currentIndex + 1) % toggleImages.length;
+            });
+        });
+    }
+
+    // Generate Random Stars
+    function createStars() {
+        const starsContainer = document.getElementById('stars');
+        if (!starsContainer) return;
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = `${Math.random() * windowWidth}px`;
+            star.style.top = `${Math.random() * windowHeight}px`;
+            starsContainer.appendChild(star);
+        }
+    }
+
+    // Call the createStars function when the page loads
+    window.addEventListener('load', createStars);
+</script>
+</html>
