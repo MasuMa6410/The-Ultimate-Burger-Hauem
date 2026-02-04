@@ -1,158 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Burger Website</title>
     <!-- Bootstrap Version 5.3.2 (CSS) -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
     <!-- CSS Link -->
     <link rel="stylesheet" href="./Style/style.css" />
     <!-- Font-awesome Cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <div id="stars"></div>
       <nav class="navbar navbar-expand-sm">
-    <div class="container">
+        <div class="container">
+          <!-- LEFT: Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./Images/logo.png" alt="Logo" style="width: 50px" />
+          </a>
 
-      <!-- LEFT: Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="./Images/logo.png" alt="Logo" style="width:50px;"> 
-      </a>
+          <!-- Mobile Toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
 
-      <!-- Mobile Toggle -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
-      <!-- COLLAPSE AREA -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-        <!-- CENTER: Navigation -->
-        <ul class="navbar-nav mx-auto center-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Root/menu.html">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Root/about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Root/shop.html">Shop</a>
-          </li>
-        </ul>
-        <!-- RIGHT: Social Icons -->
-        <div class="social ms-auto d-flex align-items-center gap-3 flex-nowrap">
-          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-          <a href=""><i class="fa-solid fa-cart-plus"></i></a>
-          <a href=""><i class="fa-solid fa-house"></i></a>
+          <!-- COLLAPSE AREA -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <!-- CENTER: Navigation -->
+            <ul class="navbar-nav mx-auto center-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Root/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Root/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Root/shop.html">Shop</a>
+              </li>
+            </ul>
+            <!-- RIGHT: Social Icons -->
+            <div
+              class="social ms-auto d-flex align-items-center gap-3 flex-nowrap"
+            >
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-solid fa-cart-plus"></i></a>
+              <a href=""><i class="fa-solid fa-house"></i></a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
       </nav>
     </header>
     <main>
       <div class="container p-5">
-        <div class="row row-cols-md-12 row-cols-sm-12 ">
-          <div class="col-lg-5 col-md-12 col-sm-12 d-flex align-items-center mb-md-4 mb-sm-4 mb-lg-0">
-            <div class="text ">
-              <h1>THE ULTIMATE <br> BURGER HAUEM</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam neque, facilis mollitia exercitationem reprehenderit. Accusamus quibusdam hic quisquam cumque voluptates, aperiam placeat voluptas recusandae consequatur laboriosam, dolor enim sunt!</p>
+        <div class="row row-cols-md-12 row-cols-sm-12">
+          <div
+            class="col-lg-5 col-md-12 col-sm-12 d-flex align-items-center mb-md-4 mb-sm-4 mb-lg-0"
+          >
+            <div class="text">
+              <h1>
+                THE ULTIMATE <br />
+                BURGER HAUEM
+              </h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                laboriosam neque, facilis mollitia exercitationem reprehenderit.
+                Accusamus quibusdam hic quisquam cumque voluptates, aperiam
+                placeat voluptas recusandae consequatur laboriosam, dolor enim
+                sunt!
+              </p>
               <a href="" class="btn">Order Now</a>
               <a href="" class="btn">View more</a>
             </div>
           </div>
-          
+
           <div class="col-lg-2 d-none d-lg-block">
             <!-- Spacer div -->
           </div>
-          
-          <div class="col-lg-5 col-md-12 col-sm-12 d-flex align-items-center mt-sm-5 mt-md-5 mt-lg-0">
-            <div class="burger-toggle ">
-              <img src="./Images/Flying Burger PNG Image - 2084x2084.png" alt="Burger" class="active">
+
+          <div
+            class="col-lg-5 col-md-12 col-sm-12 d-flex align-items-center mt-sm-5 mt-md-5 mt-lg-0"
+          >
+            <div class="burger-toggle">
+              <img
+                src="./Images/Flying Burger PNG Image - 2084x2084.png"
+                alt="Burger"
+                class="active"
+              />
             </div>
           </div>
           <div class="col-lg-12 col-md-12 col-sm-12">
-           <div class="burger mt-lg-5 mt-md-3 mt-sm-3">
-            <img src="./Images/burger.png" alt="Burger">
-            <img src="./Images/pngwing.com (12).png" alt="The Burger">
-            <img src="./Images/buger2.png" alt="Burger">
-            <img src="./Images/Flying Burger PNG Image - 2084x2084.png" alt="Flying Burger">
-            <img src="./Images/buger2.png" alt="Burger">
-          </div>
+            <div class="burger mt-lg-5 mt-md-3 mt-sm-3">
+              <img src="./Images/burger.png" alt="Burger" />
+              <img src="./Images/pngwing.com (12).png" alt="The Burger" />
+              <img src="./Images/buger2.png" alt="Burger" />
+              <img
+                src="./Images/Flying Burger PNG Image - 2084x2084.png"
+                alt="Flying Burger"
+              />
+              <img src="./Images/buger2.png" alt="Burger" />
+            </div>
           </div>
         </div>
       </div>
     </main>
-      <footer>
-        <div class="container pt-5 pl-3 pr-3 pb-3">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <h2>Get in Touch</h2>
-              <p><i class="fa-solid fa-location-dot"></i> 123 Burger Street</p>
+    <footer>
+      <div class="container pt-5 pl-3 pr-3 pb-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h2>Get in Touch</h2>
+            <p><i class="fa-solid fa-location-dot"></i> 123 Burger Street</p>
 
-              <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
 
-              <p><i class="fa-solid fa-envelope"></i> info@burgerhauem.com</p>
+            <p><i class="fa-solid fa-envelope"></i> info@burgerhauem.com</p>
 
-              <p class="mt-5"><i class="fa-brands fa-x-twitter round border border-white"></i> <i class="fa-brands fa-facebook-f round border border-white"></i> <i class="fa-brands fa-linkedin-in round border border-white"></i> <i class="fa-brands fa-instagram round border border-white"></i></p>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <h2>Quick Links</h2>
-              <ul>
-                <li> <i class="fa-solid fa-angle-right"></i> <a href="./index.html" class="style-none">Home</a></li>
-                <li> <i class="fa-solid fa-angle-right"></i> <a href="./Root/menu.html" class="style-none">Menu</a></li>
-                <li> <i class="fa-solid fa-angle-right"></i> <a href="./Root/about.html" class="style-none">About</a></li>
-                <li> <i class="fa-solid fa-angle-right"></i> <a href="./Root/shop.html" class="style-none">Shop</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <h2>Newsletter</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusamus vitae distinctio quis natus ullam.</p>
-              <form>
-                <div class="input-group">
-                  <input type="email" class="form-control" placeholder="Your Email Address">
-                  <button class="input-group-text px-4">Sign Up</button>
-                </div>
-              </form>
-            </div>
+            <p class="mt-5">
+              <i class="fa-brands fa-x-twitter round border border-white"></i>
+              <i class="fa-brands fa-facebook-f round border border-white"></i>
+              <i class="fa-brands fa-linkedin-in round border border-white"></i>
+              <i class="fa-brands fa-instagram round border border-white"></i>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="./index.html" class="style-none">Home</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="./Root/menu.html" class="style-none">Menu</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="./Root/about.html" class="style-none">About</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="./Root/shop.html" class="style-none">Shop</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2>Newsletter</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              accusamus vitae distinctio quis natus ullam.
+            </p>
+            <form>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email Address"
+                />
+                <button class="input-group-text px-4">Sign Up</button>
+              </div>
+            </form>
           </div>
         </div>
-        <hr class="m-0">
-        <div class="container pt-3 pb-3">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-6">
-              <p class="mb-0">&copy; 2026 <a href="#" class="burger-name">Burger Hauem</a>. All Rights Reserved.</p>
-            </div>
-           <div class="col-12 col-md-6 d-flex justify-content-md-end">
-              <ul class="d-flex gap-3 mb-0">
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Terms</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Help</a></li>
-              </ul>
-           </div>
+      </div>
+      <hr class="m-0" />
+      <div class="container pt-3 pb-3">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <p class="mb-0">
+              &copy; 2026 <a href="#" class="burger-name">Burger Hauem</a>. All
+              Rights Reserved.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-md-end">
+            <ul class="d-flex gap-3 mb-0">
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">FAQs</a></li>
+              <li><a href="">Help</a></li>
+            </ul>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
   </body>
   <!-- Bootstrap JS -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
- <script>
-      const burgerImages = document.querySelectorAll('.burger img');
-    const toggleImages = document.querySelectorAll('.burger-toggle img');
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const burgerImages = document.querySelectorAll(".burger img");
+    const toggleImages = document.querySelectorAll(".burger-toggle img");
     let currentIndex = 0;
 
-    toggleImages[currentIndex].classList.add('active');
+    toggleImages[currentIndex].classList.add("active");
 
     burgerImages.forEach((img, index) => {
-      img.addEventListener('click', () => {
-        toggleImages.forEach( toggleImg => toggleImg.classList.remove('active'));
-        toggleImages[currentIndex].classList.add('active');
+      img.addEventListener("click", () => {
+        toggleImages.forEach((toggleImg) =>
+          toggleImg.classList.remove("active"),
+        );
+        toggleImages[currentIndex].classList.add("active");
         toggleImages[currentIndex].src = burgerImages[index].src;
         currentIndex = (currentIndex + 1) % toggleImages.length;
       });
@@ -160,13 +223,13 @@
 
     // Generate Random Stars
     function createStars() {
-      const starsContainer = document.getElementById('stars');
+      const starsContainer = document.getElementById("stars");
       const windowWidth = window.innerWidth;
       const windowHeight = window.innerHeight;
 
       for (let i = 0; i < 100; i++) {
-        const star = document.createElement('div');
-        star.className = 'star';
+        const star = document.createElement("div");
+        star.className = "star";
         star.style.left = `${Math.random() * windowWidth}px`;
         star.style.top = `${Math.random() * windowHeight}px`;
         starsContainer.appendChild(star);
@@ -174,7 +237,6 @@
     }
 
     // Call the createStars function when the page loads
-    window.addEventListener('load', createStars)
-
- </script>
+    window.addEventListener("load", createStars);
+  </script>
 </html>
